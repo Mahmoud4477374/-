@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مين المختلف؟</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>مين المختلف؟</h1>
+
+    <div id="setup">
+        <label>عدد اللاعبين:</label>
+        <input type="number" id="numPlayers" min="3" max="12" value="3">
+        
+        <label>اختر التصنيف:</label>
+        <select id="category">
+            <option value="اكلات">🍔 أكلات</option>
+            <option value="لبس">👕 لبس</option>
+            <option value="حيوانات">🐶 حيوانات</option>
+            <option value="مواصلات">🚗 مواصلات</option>
+            <option value="العاب">🎮 ألعاب</option>
+            <option value="كورة">⚽ كرة القدم</option>
+        </select>
+        
+        <button id="startGame">ابدأ اللعبة</button>
+    </div>
+
+    <div id="game" style="display:none;">
+        <h2 id="playerTurn">دور اللاعب 1</h2>
+        <p id="playerRole">دورك: </p>
+        <p id="playerWord">كلمتك: </p>
+        <button id="nextPlayer">التالي</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
